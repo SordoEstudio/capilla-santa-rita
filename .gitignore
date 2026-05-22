@@ -1,0 +1,23 @@
+# Dependencias y build
+node_modules/
+.vercel/
+
+# Entorno local
+.env
+.env.*
+!.env.example
+
+# Sistema
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editores / IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Logs
+*.log
+npm-debug.log*
