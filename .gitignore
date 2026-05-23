@@ -1,5 +1,6 @@
 # Dependencias y build
 node_modules/
+package-lock.json
 .vercel/
 
 # Entorno local

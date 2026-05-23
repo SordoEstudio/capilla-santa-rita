@@ -27,6 +27,18 @@
 
 *, *::before, *::after { box-sizing: border-box; }
 html { scroll-behavior: smooth; }
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
 body {
   margin: 0;
   font-family: var(--font-sans);
@@ -511,6 +523,20 @@ p { margin: 0 0 1em; }
 .sym {
   font-size: 2rem;
   line-height: 1;
+}
+.sym--icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 2rem;
+}
+.sym--icon .sym-svg {
+  width: 1.75rem;
+  height: auto;
+  display: block;
+}
+.sym--icon-narrow .sym-svg {
+  width: 1.35rem;
 }
 .symbols .sym-label {
   font-family: var(--font-serif);
